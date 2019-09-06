@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5911776592043466507}
   - component: {fileID: 2139150779287379626}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,5 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789a7f726158d49ef82a938dbd06eb48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireballPrefab: {fileID: 1413187372912747718, guid: 0ebd3017840884430ac243aa190dafac,
+    type: 3}
   speed: 3
   obstacleRange: 5
