@@ -5,11 +5,14 @@ using UnityEngine;
 public class RayShooter : MonoBehaviour {
   private Camera _camera;
 
+  [SerializeField] private bool cursorLock;
+
    void Start() {
      _camera = GetComponent<Camera>();
-
-     Cursor.lockState = CursorLockMode.Locked;
-     Cursor.visible = false;
+     if (cursorLock) {
+       Cursor.lockState = CursorLockMode.Locked;
+       Cursor.visible = false;
+     }
    }
 
    void OnGUI() {
